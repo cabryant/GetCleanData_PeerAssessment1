@@ -72,5 +72,6 @@ data_tidy <- aggregate(
   list(subject=data_some$subject, activity=data_some$activity), 
   mean)
 
-setwd(../..)
+setwd("..")
 write.table(data_tidy, "./tidy_summary.txt", row.names=FALSE)
+
